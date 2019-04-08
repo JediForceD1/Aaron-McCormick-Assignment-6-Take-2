@@ -25,10 +25,11 @@ double Tips::getTip_rate()
 {
 	return tip_rate;
 }
-//-------- class calculation functions ------
+//-------- class calculation functions ------ FIX ALL BELOW
 double Tips::getTipAmount()
 {
-	double tip_amount = 0;
+	double tip_amount = (100 / tip_rate) + 100;
+	
 	return tip_amount;
 }
 double Tips::getBillAmountBeforeTaxes()
